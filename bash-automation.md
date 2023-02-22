@@ -1,5 +1,5 @@
 # Linux Bash Automation
-## Adduser Many User in Linux
+## Adding Multiple Users on Linux
 first create bash file, example : user.sh
 
     nano user.sh
