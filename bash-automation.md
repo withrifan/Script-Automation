@@ -11,6 +11,14 @@ for example we add 100 users, user1-user100. Edit file user.sh
     adduser user$i --disabled-password --gecos user$i
     passwd user$i <<< "P4$$w0rd"$'\n'"P4$$w0rd"
     done
+
+or
+
+    for i in {1..100}
+    do
+    useradd user$i -s /bin/bash -m
+    passwd user$i <<< "P4$$w0rd"$'\n'"P4$$w0rd"
+    done
     
 give privilege to execute user.sh
 
@@ -21,6 +29,8 @@ and run
     bash user.sh
  
 ---
+
+## 
 
 ## Create Multiple Bind9 Subdomains
 first create bash file, example : domain.sh
